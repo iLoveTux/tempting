@@ -62,16 +62,6 @@ def render_file(src, dst, namespace):
         dst.write_text(template)
 
 
-default_namespace = {
-    "environ": os.environ,
-    "requests": requests,
-    "subprocess": subprocess,
-    "json": json,
-    "etree": etree,
-    "open": open,
-    "sys": sys,
-    "os": os,
-}
 @click.command()
 @click.argument("src")
 @click.argument("dst")
@@ -92,18 +82,7 @@ def main(src, dst, interval, recursive, namespace):
         if isinstance(namespace, (str, Path)):
             namespace_file = namespace
             with open(namespace, "r") as fin:
-                namespace = default_namespace
-                namespace.update(
-                    {
-                        "args": {
-                            "src": src,
-                            "dst": dst,
-                            "interval": interval,
-                            "recursive": recursive,
-                            "namespace": namespace_file
-                        }
-                    }
-                )
+                namespace = globals()
                 namespace.update(json.load(fin))
         data_changed = old_namespace != namespace
         if data_changed:
