@@ -8,6 +8,7 @@ import glob
 import click
 import requests
 import subprocess
+import builtins
 from lxml import etree
 from time import sleep
 from pathlib import Path
