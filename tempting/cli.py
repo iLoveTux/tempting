@@ -7,6 +7,7 @@ import json
 import glob
 import click
 import requests
+import subprocess
 from lxml import etree
 from time import sleep
 from pathlib import Path
@@ -64,6 +65,7 @@ def render_file(src, dst, namespace):
 default_namespace = {
     "environ": os.environ,
     "requests": requests,
+    "subprocess": subprocess,
     "json": json,
     "etree": etree,
     "open": open,

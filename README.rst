@@ -26,7 +26,16 @@ Real-time data streams with templating built in.
 Features
 --------
 
-* TODO
+* Near-Real time rendering of templates
+* Template file and directory names
+* Jinja2 template engine
+* Easy to use
+* Plain JSON namespacing
+* Only re-renders when templates change
+
+* TODO: Stream data trough templates into output files (like logs)
+* TODO: Robust error handling
+
 
 Credits
 -------
