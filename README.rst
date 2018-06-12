@@ -217,6 +217,6 @@ Original Author and maintainer: ilovetux_
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _Jinja2: https://github.com/audreyr/cookiecutter
+.. _Jinja2: http://http://jinja.pocoo.org/
 .. _ilovetux: https://github.com/ilovetux
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
