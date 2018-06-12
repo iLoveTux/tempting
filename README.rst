@@ -106,7 +106,7 @@ templates::
   $ mkdir out
 
 Next we will start creating some templates. Consider the following file saved
-as `./in/first.txt` (this is Jinja2 syntax, `RTFM Jinja2`_)::
+as `./in/first.txt` (this is Jinja2 syntax, RTFM for Jinja2_)::
 
   Hello {{ foo }}:
 
