@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = ['Click>=6.0', 'Jinja2>=2.9.6']
 
 setup_requirements = [ ]
 
@@ -32,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    description="Real-time data streams with templating built in.",
+    description="Template all the things.",
     entry_points={
         'console_scripts': [
             'tempting=tempting.cli:main',
