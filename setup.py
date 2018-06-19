@@ -36,6 +36,8 @@ setup(
     entry_points={
         'console_scripts': [
             'tempting=tempting.cli:main',
+            'ts=tempting.ts:main',
+            'lenses=tempting.lenses:main',
         ],
     },
     install_requires=requirements,
